@@ -1,13 +1,17 @@
-# Template 
+# Proyecto Final, Página Personal
 
 ## Descripcion
-Es un template para trabajar en react sin utilizar react-create-app.
+Página personal para demostrar los conocimientos en desarrollo web
 
-### Instalacion
-Para instalar las dependencias es necesario correr:
-```bash
-$ npm install
-```
+## Checklist
+
+- [x] (40pts) Design
+- [ ] (10pts) Publicarlo en un puerto
+- [ ] (10pts) Unit testing
+- [ ] (10pts) Uso de Webpack
+- [ ] (10pts) Uso de Eslint
+- [ ] (10pts) Uso de Babel
+- [ ] (10pts) Responsive
 
 
 
