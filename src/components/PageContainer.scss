@@ -1,0 +1,23 @@
+
+img{
+  filter: saturate(100%) brightness(60%);
+}
+
+svg{
+  width: 7vw;
+  transition: 400ms;
+
+
+  &:hover{
+
+    width: 10vw;
+  }
+}
+
+.carousel-control-prev-icon {
+  &:hover{
+    width: 1200% !important;
+  }
+}
+
+
