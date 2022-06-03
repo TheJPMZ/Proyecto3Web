@@ -1,12 +1,17 @@
 import React from 'react';
 import './App.scss';
 import PageContainer from "./PageContainer";
+import LanguageContainer from "./LanguageContainer";
+import NavBar from "./NavBar";
 
 function App() {
     return (
         <>
-            <h1>Hello World</h1>
-            <PageContainer nombre={"meme"} descripcion={"Memes Buenos"} />
+            <NavBar/>
+            <h1 style={{textAlign: "center",color:"white"}}> Jose Pablo Monzon </h1>
+
+            <PageContainer nombre={"meme"} descripcion={"Memes Buenos"} id="PageContainerReact" />
+            <LanguageContainer id="Skills"/>
         </>
     );
 }
