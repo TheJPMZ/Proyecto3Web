@@ -1,6 +1,7 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import './LanguageContainer.scss';
-import iconos from './iconos';
+import iconos from '../iconos';
 
 const mainSkills = ['Python', 'JavaScript', 'React', 'Sass', 'Git'];
 const subSkills = ['Java', 'Webpack', 'Babel', 'HTML', 'CSS', 'EsLint', 'Rust'];
@@ -8,12 +9,12 @@ const otherSkills = ['Bootstrap', 'Jest', 'Firebase', 'Kotlin', 'C', 'CPP', 'CSh
 
 function LanguageContainer() {
   return (
-    <div className="container">
-      <h1 style={{ textAlign: 'center' }}>My SkillSet</h1>
+    <div id="skills" className="container">
+      <h1 style={{ textAlign: 'center' }}>My Skill Set</h1>
       <h2 style={{ textAlign: 'center' }}>Main Skills</h2>
       <div className="d-flex flex-wrap" style={{ justifyContent: 'center' }}>
         {mainSkills.map((x) => (
-          <a data-bs-toggle="collapse" data-bs-target={`#${x}`} style={{ textDecoration: 'None' }} className="m-1">
+          <a data-testid="testSkills" data-bs-toggle="collapse" data-bs-target={`#${x}`} style={{ textDecoration: 'None' }} className="m-1">
             {iconos[x]}
             <div id={x} className="collapse" style={{ textAlign: 'center', color: 'white' }}>
               {x}
@@ -24,9 +25,9 @@ function LanguageContainer() {
       <h2 style={{ textAlign: 'center' }}>Secondary Skills</h2>
       <div className="d-flex flex-wrap" style={{ justifyContent: 'center' }}>
         {subSkills.map((x) => (
-          <a data-bs-toggle="collapse" data-bs-target={`#${x}`} style={{ textDecoration: 'None' }} className="m-1">
+          <a data-testid="testSkills" data-bs-toggle="collapse" data-bs-target={`#${x}`} style={{ textDecoration: 'None' }} className="m-1">
             {iconos[x]}
-            <div id={x} className="collapse">
+            <div id={x} className="collapse" style={{ textAlign: 'center', color: 'white' }}>
               {x}
             </div>
           </a>
@@ -35,9 +36,9 @@ function LanguageContainer() {
       <h2 style={{ textAlign: 'center' }}>Other Skills</h2>
       <div className="d-flex flex-wrap" style={{ justifyContent: 'center' }}>
         {otherSkills.map((x) => (
-          <a data-bs-toggle="collapse" data-bs-target={`#${x}`} style={{ textDecoration: 'None' }} className="m-1">
+          <a data-testid="testSkills" data-bs-toggle="collapse" data-bs-target={`#${x}`} style={{ textDecoration: 'None' }} className="m-1">
             {iconos[x]}
-            <div id={x} className="collapse">
+            <div id={x} className="collapse" style={{ textAlign: 'center', color: 'white' }}>
               {x}
             </div>
           </a>
