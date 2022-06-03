@@ -1,9 +1,5 @@
 import React from 'react';
 import './PageContainer.scss';
-import '../assets/Animation.gif';
-import '../assets/Animation2.gif';
-import '../assets/Animation3.gif';
-import '../assets/Animation4.gif';
 import iconos from './iconos';
 
 function PageContainer({
